@@ -1481,8 +1481,10 @@ namespace http {
 			ShowSAMSession (s, params["sam_id"]);
 		else if (page == HTTP_PAGE_I2P_TUNNELS)
 			ShowI2PTunnels (s);
+#ifndef NO_TORRENTS
 		else if (page == OPENJS_TORRENT_CLIENT_PAGE)
 			ShowTorrentsPage (s, params);
+#endif
 		else if (page == HTTP_PAGE_LEASESETS)
 			ShowLeasesSets(s);
         	else {
