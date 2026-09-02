@@ -25,8 +25,10 @@
 #include "BOB.h"
 #include "I2CP.h"
 #include "AddressBook.h"
+#ifndef NO_TORRENTS
 #include "TorrentsTunnel.h"
 #include "TorrentsRPC.h"
+#endif
 #include "I18N_langs.h"
 
 namespace i2p
